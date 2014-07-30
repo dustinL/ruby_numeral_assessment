@@ -6,16 +6,18 @@ def roman_func (number)
 
 	numeral_result = []
 
-	convert = number.to_s.reverse.split(" ")
-	numeral_result.push(ones[convert[0].to_i])
+	convert = number.to_s.split("").reverse
+	
+	numeral_result << (ones[convert[0].to_i])
+	numeral_result << (tens[convert[1].to_i])
 
-	numeral_result.join("").reverse
+	numeral_result.reverse.join("")
 
 	# puts numeral_result
 
 end
 
-# puts roman_func(5)
+# puts roman_func(29)
 
 	#input 29
-	# ("9 2")
+	# ["9", "2"]
