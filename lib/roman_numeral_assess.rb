@@ -10,14 +10,12 @@ def roman_func (number)
 	
 	numeral_result << (ones[convert[0].to_i])
 	numeral_result << (tens[convert[1].to_i])
+	numeral_result << (hundreds[convert[2].to_i])
+	numeral_result << (thousands[convert[3].to_i])
 
 	numeral_result.reverse.join("")
-
-	# puts numeral_result
 
 end
 
 # puts roman_func(29)
 
-	#input 29
-	# ["9", "2"]
